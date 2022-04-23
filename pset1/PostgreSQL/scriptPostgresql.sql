@@ -37,12 +37,11 @@ COMMENT ON SCHEMA elmasri
 -- ordem dos esquemas alterada
 SET SEARCH_PATH TO elmasri, 'lucas', public;
 
--- mostra que o caminho está correto
-SHOW SEARCH_PATH;
+/* mostra que o caminho está correto, desativado por ser apenas para teste
+SHOW SEARCH_PATH; */
 
 
 -- Criando as tabelas e relações
-
 -- Criando a tabela funcionário e adicionando seus comentários
 CREATE TABLE elmasri.funcionario (
                 cpf CHAR(11) NOT NULL,
@@ -52,7 +51,7 @@ CREATE TABLE elmasri.funcionario (
                 data_nascimento DATE,
                 endereco VARCHAR(40),
                 sexo CHAR(1),
-                salario NUMERIC(10,2),
+                salario DECIMAL(10,2),
                 cpf_supervisor CHAR(11),
                 numero_departamento INTEGER NOT NULL,
                 CONSTRAINT cpf_pk PRIMARY KEY (cpf)
@@ -128,7 +127,7 @@ CREATE UNIQUE INDEX nome_projeto
 CREATE TABLE elmasri.trabalha_em (
                 cpf_funcionario CHAR(11) NOT NULL,
                 numero_projeto INTEGER NOT NULL,
-                horas NUMERIC(3,1),
+                horas DECIMAL(3,1),
                 CONSTRAINT cpf_funcionario_pk PRIMARY KEY (cpf_funcionario, numero_projeto)
 );
 COMMENT ON COLUMN elmasri.trabalha_em.cpf_funcionario IS 'CPF do funcionário. Faz parte da PK desta tabela e é uma FK para a tabela funcionário.';
