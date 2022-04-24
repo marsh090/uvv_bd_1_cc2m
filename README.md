@@ -10,12 +10,12 @@ Este trabalho foi realizado na companhia de - **[VITOR MOTTA SUPELETE](https://g
 ## Conteúdo do repositório:
 
 [Pset1](https://github.com/marsh090/uvv_bd_1_cc2m/tree/main/pset1 "pset1")  
-├[MariaDB](https://github.com/marsh090/uvv_bd_1_cc2m/tree/main/pset1/MariaDB "MariaDB")  
-&nbsp; &nbsp; &nbsp;├ [scriptMariaDB_1.sql](https://github.com/marsh090/uvv_bd_1_cc2m/blob/main/pset1/MariaDB/scriptMariaDB_1.sql "scriptMariaDB_1.sql")  
-&nbsp; &nbsp; &nbsp;└ [scriptMariaDB_2.sql](https://github.com/marsh090/uvv_bd_1_cc2m/blob/main/pset1/MariaDB/scriptMariaDB_2.sql "scriptMariaDB_2.sql")  
-├[PostgreSQL](https://github.com/marsh090/uvv_bd_1_cc2m/tree/main/pset1/PostgreSQL "PostgreSQL")  
-&nbsp; &nbsp; &nbsp;└[scriptPostgresql.sql](https://github.com/marsh090/uvv_bd_1_cc2m/blob/main/pset1/PostgreSQL/scriptPostgresql.sql "scriptPostgresql.sql")  
-└[projeto.architect](https://github.com/marsh090/uvv_bd_1_cc2m/blob/main/pset1/projeto.architect "projeto.architect")  
+&nbsp; ├[MariaDB](https://github.com/marsh090/uvv_bd_1_cc2m/tree/main/pset1/MariaDB "MariaDB")  
+&nbsp; &nbsp; &nbsp; ├ [scriptMariaDB_1.sql](https://github.com/marsh090/uvv_bd_1_cc2m/blob/main/pset1/MariaDB/scriptMariaDB_1.sql "scriptMariaDB_1.sql")  
+&nbsp; &nbsp; &nbsp; └ [scriptMariaDB_2.sql](https://github.com/marsh090/uvv_bd_1_cc2m/blob/main/pset1/MariaDB/scriptMariaDB_2.sql "scriptMariaDB_2.sql")  
+&nbsp; ├[PostgreSQL](https://github.com/marsh090/uvv_bd_1_cc2m/tree/main/pset1/PostgreSQL "PostgreSQL")  
+&nbsp; &nbsp; &nbsp; └[scriptPostgresql.sql](https://github.com/marsh090/uvv_bd_1_cc2m/blob/main/pset1/PostgreSQL/scriptPostgresql.sql "scriptPostgresql.sql")  
+&nbsp; └[projeto.architect](https://github.com/marsh090/uvv_bd_1_cc2m/blob/main/pset1/projeto.architect "projeto.architect")  
 
 
 
