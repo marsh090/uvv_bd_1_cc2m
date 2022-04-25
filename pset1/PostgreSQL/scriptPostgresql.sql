@@ -6,7 +6,7 @@ CREATE ROLE "lucas" WITH
   CREATEDB
   CREATEROLE
   REPLICATION
-  PASSWORD '1234';
+  PASSWORD '123';
 
 COMMENT ON ROLE "lucas" IS 'Usuario dono do banco de dados';
 
