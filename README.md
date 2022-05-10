@@ -6,7 +6,7 @@ Este trabalho envolveu correção de erros no projeto logico Elmasri - apresenta
 
 Este projeto realizado pelo aluno Lucas Zanon Guarnier da CC2M(2022/1) e foi orientado pelo professor [Abrantes Araujo Silva Filho](https://github.com/abrantesasf) e pela tutora [Suellen Miranda](https://github.com/SuellenMiranda) para a matéria de Banco de Dados 
 
-Este trabalho foi realizado na companhia de - **[VITOR MOTTA SUPELETE](https://github.com/OCVitin)**
+Este trabalho foi realizado na companhia de - **[VITOR MOTTA SUPELETE](https://github.com/OCVitin)** e **[Andre Coco Pereira Melotti](https://github.com/AndreMelotti)**
 
 ## Conteúdo do repositório:
 
