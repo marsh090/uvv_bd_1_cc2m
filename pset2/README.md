@@ -78,15 +78,15 @@ nome_funcionario | numero_departamento | salario
  ***
 **Questão 8 -** Relatório com os projetos de cada departamento e o nome completo dos funcionários de cada projeto. incluir o número de horas trabalhadas por cada funcionário, em cada projeto.
 ***Atenção:*** o funcionário Jorge E Brito possui tempo NULL de horas trabalhadas, por isso a tabela fica em branco
- nome_departamento |  nome_projeto   | nome_funcionario | horas 
--------------------|-----------------|------------------|-------
+nome_departamento |  nome_projeto   | nome_funcionario | horas 
+------------------|---------------|--------------|-------
  Administração     | Informatização  | Alice J Zelaya   |  10.0
  Administração     | Informatização  | André V Pereira  |  35.0
  Administração     | Novosbeneficios | Jennifer S Souza |  20.0
  Administração     | Novosbeneficios | Alice J Zelaya   |  30.0
  Administração     | Novosbeneficios | André V Pereira  |   5.0
  Administração     | Reorganização   | Jennifer S Souza |  15.0
- Matriz            | Reorganização   | Jorge E Brito    |      
+ Matriz            | Reorganização   | Jorge E Brito    |   0.0
  Pesquisa          | Informatização  | Fernando T Wong  |  10.0
  Pesquisa          | ProdutoX        | João B Silva     |  32.5
  Pesquisa          | ProdutoX        | Joice A Leite    |  20.0
@@ -96,19 +96,21 @@ nome_funcionario | numero_departamento | salario
  Pesquisa          | ProdutoZ        | Fernando T Wong  |  10.0
  Pesquisa          | ProdutoZ        | Ronaldo K Lima   |  40.0
  Pesquisa          | Reorganização   | Fernando T Wong  |  10.0
+
  ***
 **Questão 9 -** Relatório com soma total das horas de cada projeto em cada departamento.
-nome_departamento |  nome_projeto   | total_horas 
------------------|---------------|-------------
+ nome_departamento |  nome_projeto   | total_horas 
+-------------------|-----------------|-------------
  Pesquisa          | Informatização  |        10.0
  Administração     | Informatização  |        45.0
  Pesquisa          | ProdutoZ        |        50.0
  Pesquisa          | Reorganização   |        10.0
  Administração     | Novosbeneficios |        55.0
- Matriz            | Reorganização   |            
+ Matriz            | Reorganização   |         0.0
  Administração     | Reorganização   |        15.0
  Pesquisa          | Produto Y       |        37.5
  Pesquisa          | ProdutoX        |        52.5
+
 ***
 **Questão 10 -** Relatório com média salarial dos funcionários de cada departamento.
  nome_departamento | media_salarial 
@@ -120,7 +122,7 @@ nome_departamento |  nome_projeto   | total_horas
 **Questão 11 -** Relatório com nome completo do funcionário, o nome do projeto e o valor total que o funcionário receberá referente às horas trabalhadas (50R$/h)
  nome_funcionario |  nome_projeto   | valor_total 
 ---------------|----------------|-----------
- Jorge E Brito    | Reorganização   |            
+ Jorge E Brito    | Reorganização   |        0.00
  Jennifer S Souza | Novosbeneficios |     1000.00
  Jennifer S Souza | Reorganização   |      750.00
  Fernando T Wong  | Reorganização   |      500.00

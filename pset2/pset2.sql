@@ -48,7 +48,7 @@ FROM funcionario AS F
 WHERE F.cpf NOT IN (SELECT D.cpf_funcionario FROM dependente AS D);
 
 -- 8: para cada departamento, os projetos desse departamento e o nome completo dos funcionários que estão alocados em cada projeto. Além disso inclua o número de horas trabalhadas por cada funcionário, em cada projeto.
-SELECT D.nome_departamento, P.nome_projeto, (F.primeiro_nome||' '|| F.nome_meio||' '|| F.ultimo_nome) AS nome_funcionario, T.horas
+SELECT D.nome_departamento, P.nome_projeto, (F.primeiro_nome||' '|| F.nome_meio||' '|| F.ultimo_nome) AS nome_funcionario, CAST (CASE WHEN T.horas is null then 0 else T.horas end as DECIMAL(3, 1)) as horas
 FROM funcionario AS F
 INNER JOIN trabalha_em AS T
 ON F.cpf = T.cpf_funcionario
@@ -59,7 +59,7 @@ ON F.numero_departamento = D.numero_departamento
 ORDER BY D.nome_departamento, P.nome_projeto, F.salario DESC;
 
 -- 9: soma total das horas de cada projeto em cada departamento. o relatório deve exibir o nome do departamento, o nome do projeto e a soma total das horas.
-SELECT D.nome_departamento, P.nome_projeto, SUM(T.horas) AS total_horas
+SELECT D.nome_departamento, P.nome_projeto, CAST (CASE WHEN SUM(T.horas) is null then 0 else SUM(T.horas) end as DECIMAL(3, 1)) AS total_horas
 FROM funcionario AS F
 INNER JOIN trabalha_em AS T
 ON F.cpf = T.cpf_funcionario
@@ -77,7 +77,7 @@ ON F.numero_departamento = D.numero_departamento
 GROUP BY D.nome_departamento;
 
 -- 11: considerando que o valor pago por hora trabalhada em um projeto é de 50 reais, prepare um relatório que mostre o nome completo do funcionário, o nome do projeto e o valor total que o funcionário receberá referente às horas trabalhadas naquele projeto.
-SELECT (F.primeiro_nome||' '|| F.nome_meio||' '|| F.ultimo_nome) AS nome_funcionario, P.nome_projeto, CAST (T.horas * 50 AS DECIMAL(10,2)) AS valor_total
+SELECT (F.primeiro_nome||' '|| F.nome_meio||' '|| F.ultimo_nome) AS nome_funcionario, P.nome_projeto, CAST (CASE WHEN T.horas is null then 0 else (T.horas * 50) END AS DECIMAL(10,2)) AS valor_total
 FROM funcionario AS F
 INNER JOIN trabalha_em AS T
 ON F.cpf = T.cpf_funcionario
