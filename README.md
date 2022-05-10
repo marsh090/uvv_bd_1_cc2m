@@ -1,3 +1,4 @@
+
 &nbsp;
 # Repositório uvv_bd_1_cc2m
 
@@ -16,7 +17,8 @@ Este trabalho foi realizado na companhia de - **[VITOR MOTTA SUPELETE](https://g
 &nbsp; ├[PostgreSQL](https://github.com/marsh090/uvv_bd_1_cc2m/tree/main/pset1/PostgreSQL "PostgreSQL")  
 &nbsp; &nbsp; &nbsp; └[scriptPostgresql.sql](https://github.com/marsh090/uvv_bd_1_cc2m/blob/main/pset1/PostgreSQL/scriptPostgresql.sql "scriptPostgresql.sql")  
 &nbsp; └[projeto.architect](https://github.com/marsh090/uvv_bd_1_cc2m/blob/main/pset1/projeto.architect "projeto.architect")  
-
+[Pset2](https://github.com/marsh090/uvv_bd_1_cc2m/tree/main/pset2 "pset2")  
+&nbsp; ├[pset2.sql](https://github.com/marsh090/uvv_bd_1_cc2m/blob/main/pset2/pset2.sql "pset2.sql")
 
 
 
